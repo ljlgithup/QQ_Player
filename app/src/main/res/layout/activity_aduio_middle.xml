@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!--示波器-->
+        <ImageView
+            android:id="@+id/iv_audio_wave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/aduio_wave_anima"
+            android:layout_centerHorizontal="true"
+            />
+    <!--歌手-->
+        <TextView
+            android:id="@+id/tv_audio_arties"
+            android:layout_below="@id/iv_audio_wave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="歌手"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            />
+
+    <!--歌词-->
+    <com.example.it.qq_player.lyrics.LyricView
+        android:id="@+id/lyric"
+        android:layout_below="@id/tv_audio_arties"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        />
+
+</RelativeLayout>
